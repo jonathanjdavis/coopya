@@ -68,4 +68,12 @@ class User extends Authenticatable
     {
         return $this->hasOne(Admin::class);
     }
+
+    /**
+     * Get the occupant associated with the user.
+     */
+    public function occupant()
+    {
+        return $this->hasOne(Occupant::class);
+    }
 }
