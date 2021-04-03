@@ -15,9 +15,9 @@ class CreateAdminsTable extends Migration
     {
         Schema::create('admins', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
             $table->foreignId('user_id');
             $table->string('title', 63);
+            $table->timestamps();
             $table->softDeletes();
         });
     }
