@@ -35,4 +35,12 @@ class Occupant extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    /**
+     * The units that the occupant belongs to.
+     */
+    public function units()
+    {
+        return $this->belongsToMany(Unit::class);
+    }
 }
