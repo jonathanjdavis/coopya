@@ -18,7 +18,6 @@ class CreateAdminRoleTable extends Migration
             $table->foreignId('admin_id');
             $table->foreignId('role_id');
             $table->timestamps();
-            $table->softDeletes();
         });
     }
 
